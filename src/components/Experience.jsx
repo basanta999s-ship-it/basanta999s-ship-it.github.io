@@ -2,29 +2,28 @@ import { motion } from 'framer-motion';
 
 const jobs = [
   {
-    role: 'Software QA Analyst',
-    company: 'Daraz Kaymu Pvt. Ltd.',
-    location: 'Kathmandu, Nepal',
-    date: 'Jun 2019 – Dec 2022',
+    role: 'Customer Service & Operations Associate',
+    company: "Frank's Hakka",
+    location: 'Mississauga, ON',
+    date: 'May 2024 – May 2026',
     bullets: [
-      "Led manual and automated testing for Daraz's e-commerce platform and ERP systems (Product Dashboard, Vendor Management, Seller Portal).",
-      'Participated in Agile ceremonies including stand-ups, sprint planning, and retrospectives.',
-      'Developed and maintained automation frameworks using Playwright (JavaScript), reducing manual testing time by 30%.',
-      'Executed API and database validation to ensure data consistency across pricing, inventory, and product details.',
-      'Conducted cross-browser, smoke, regression, and UAT testing across multiple environments.',
-      'Integrated automated suites into Jenkins CI/CD pipelines, ensuring faster, stable deployments.',
-      'Improved defect tracking and communication efficiency by 25% via structured JIRA workflows.',
+      'Manage daily customer orders and POS transactions, support payroll and scheduling, and help keep front-of-house operations running smoothly.',
+      'Known for staying organized under pressure, asking thoughtful questions, and translating complex issues into clear, actionable updates for both technical and non-technical stakeholders.',
+      'Resolve day-to-day operational issues by coordinating order changes, customer concerns, and process gaps, helping maintain service quality during peak business hours.',
     ],
   },
   {
-    role: 'IT Intern',
-    company: 'National Human Rights Commission',
-    location: 'Kathmandu, Nepal',
-    date: 'Sep 2018 – May 2019',
+    role: 'Quality Assurance & Governance Analyst',
+    company: 'Daraz Kyamu Pvt. Ltd.',
+    location: 'Nepal',
+    date: 'Jun 2019 – Dec 2022',
     bullets: [
-      'Designed and developed a user-friendly website using Bootstrap and the Laravel framework, including customer databases.',
-      'Planned website architecture and documented development processes, solutions, and best practices.',
-      'Provided technical support for hardware, software, and network issues, serving over 50 users.',
+      "Owned manual and automated testing across Daraz's e-commerce platform and connected ERP systems — Product Dashboard, Vendor Management, and Seller Portal — ensuring quality across critical, revenue-driving workflows.",
+      'Cleaned and standardized bulk product data from CSV exports using Excel Power Query and formula-based checks (XLOOKUP, SUMIFS, COUNTIFS, Text-to-Columns), resolving duplicates, inconsistent attribute formats, and missing fields across thousands of monthly records.',
+      'Designed real-time, rule-based QC controls that blocked 200+ non-compliant listings monthly, cutting policy violations by 25%.',
+      'Executed cross-browser, smoke, regression, and UAT cycles across staging and pre-prod environments, collaborating closely with developers to triage and resolve issues quickly.',
+      'Streamlined JIRA workflows and bug templates, producing cleaner defect handoffs and improving tracking efficiency by about 25%.',
+      'Generated monthly stakeholder reports using Power BI and Excel, automating manual data aggregation and saving the team 5+ hours of manual work per week.',
     ],
   },
 ];
@@ -37,7 +36,7 @@ export default function Experience() {
           Professional Journey
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-text tracking-tight">
-          Where I've shipped quality.
+          Where I've cleaned data and shipped quality.
         </h2>
       </div>
 

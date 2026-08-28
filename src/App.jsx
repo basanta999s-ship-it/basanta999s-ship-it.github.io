@@ -40,10 +40,10 @@ export default function App() {
           Get In Touch
         </p>
         <h2 className="text-4xl md:text-5xl font-bold text-text tracking-tight mb-6">
-          Let's build something reliable.
+          Let's turn data into decisions.
         </h2>
         <p className="text-lg text-muted mb-10 max-w-xl mx-auto leading-relaxed">
-          I'm open to QA Automation roles and consulting on test architecture.
+          I'm open to Data Analyst, BI, and reporting roles across the GTA.
           My inbox is always open.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 text-left max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/basanta-shahi/"
             target="_blank"
             rel="noreferrer"
             className="bg-card border border-border rounded-lg px-6 py-4 hover:border-accent/50 transition-colors flex items-center gap-5"

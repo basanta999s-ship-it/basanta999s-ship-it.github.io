@@ -3,15 +3,15 @@ import { ArrowUpRight, Code, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Playwright E2E Automation Framework',
-    desc: 'Scalable Playwright framework for a demo e-commerce platform built on Page Object Model — reusable pages/tests/utils modules, data-driven auth and form validation, parallel cross-browser runs (Chromium, Firefox, WebKit), GitHub Actions CI, and HTML reporting. GenAI/MCP servers used to generate test scripts, data sets, and defect diagnostics.',
-    tech: ['Playwright', 'JavaScript', 'POM', 'GitHub Actions', 'GenAI/MCP'],
+    title: 'Stock Price & Revenue Analysis',
+    desc: 'Extracted historical share price data through the yfinance API and scraped quarterly revenue tables from public web sources with BeautifulSoup, then cleaned and reshaped both into Pandas DataFrames. Built comparative time-series dashboards in Plotly plotting revenue against share price — a repeatable extract, transform, and visualize workflow in Jupyter Notebook.',
+    tech: ['Python', 'yfinance', 'BeautifulSoup', 'Pandas', 'Plotly'],
     href: '#',
   },
   {
-    title: 'API Automation Suite (Postman + Newman)',
-    desc: 'REST API automation covering CRUD operations, response schemas, status codes, and business rules. Postman collections with environment variables and JavaScript assertions, executed locally via Collection Runner and headlessly via Newman CLI in CI.',
-    tech: ['Postman', 'Newman CLI', 'REST API', 'JavaScript'],
+    title: 'Car Sales Analysis Dashboard',
+    desc: 'Interactive Excel dashboard covering 155 vehicle models across 30 manufacturers using structured Tables, calculated fields (IF/IFS), PivotTables, and slicer-linked visualizations. Found the top 3 brands hold 44.5% of unit sales, while price correlates with resale retention at only 0.17 — indicating brand, not price, drives value retention.',
+    tech: ['Microsoft Excel', 'PivotTables', 'Slicers', 'IF / IFS'],
     href: '#',
   },
 ];
@@ -24,7 +24,7 @@ export default function Frameworks() {
           Featured Projects
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-text tracking-tight">
-          Frameworks I've built and shipped.
+          Analyses I've built end to end.
         </h2>
       </div>
 

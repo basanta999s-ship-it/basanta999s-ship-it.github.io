@@ -1,45 +1,67 @@
 import { motion } from 'framer-motion';
-import { MonitorPlay, Server, Layers, Bug, GitBranch, Code } from 'lucide-react';
+import { Database, Table2, BarChart3, Code, Cloud, ClipboardCheck } from 'lucide-react';
 
 const arsenal = [
   {
-    icon: MonitorPlay,
-    title: 'Testing & Automation',
+    icon: Database,
+    title: 'Data Analysis & Querying',
     tech: [
-      'Manual Testing',
-      'Functional',
-      'Regression',
-      'Smoke',
-      'Sanity',
-      'UAT',
-      'Playwright (JavaScript)',
-      'Test Case Design & Execution',
+      'SQL (MySQL)',
+      'Data Cleaning',
+      'Data Validation',
+      'ETL / Data Preparation',
+      'KPI Reporting',
     ],
   },
   {
-    icon: Server,
-    title: 'API & Web Services',
-    tech: ['Postman', 'REST API', 'JSON', 'Newman CLI'],
+    icon: Table2,
+    title: 'Excel & Spreadsheets',
+    tech: [
+      'PivotTables',
+      'Power Query',
+      'XLOOKUP',
+      'SUMIFS / COUNTIFS',
+      'Text-to-Columns',
+      'Structured Tables & Slicers',
+    ],
   },
   {
-    icon: Layers,
-    title: 'Frameworks & Tools',
-    tech: ['Pytest', 'Page Object Model (POM)', 'BDD', 'TDD'],
-  },
-  {
-    icon: Bug,
-    title: 'Defect Management Tools',
-    tech: ['Confluence', 'JIRA'],
-  },
-  {
-    icon: GitBranch,
-    title: 'CI/CD & Version Control',
-    tech: ['Jenkins', 'Git', 'GitHub Actions'],
+    icon: BarChart3,
+    title: 'Visualization & BI',
+    tech: ['Power BI', 'Tableau', 'Looker Studio', 'IBM Cognos Analytics', 'Plotly'],
   },
   {
     icon: Code,
-    title: 'Languages & Databases',
-    tech: ['Python', 'JavaScript', 'SQL (MySQL, Oracle)'],
+    title: 'Languages & Libraries',
+    tech: [
+      'Python (Pandas, NumPy)',
+      'Matplotlib & Plotly',
+      'JavaScript',
+      'HTML & CSS',
+    ],
+  },
+  {
+    icon: Cloud,
+    title: 'Platforms & Tools',
+    tech: [
+      'IBM Watson Studio',
+      'Jupyter Notebook',
+      'IBM Cloud',
+      'Generative AI for Data Analytics',
+      'GitHub & GitHub Actions',
+      'Jenkins',
+    ],
+  },
+  {
+    icon: ClipboardCheck,
+    title: 'QA & Workflow',
+    tech: [
+      'JIRA & Confluence',
+      'Trello',
+      'Agile Delivery',
+      'Defect Lifecycle Management',
+      'Regression & UAT Testing',
+    ],
   },
 ];
 
@@ -48,7 +70,7 @@ export default function Expertise() {
     <section id="skills" className="py-24 w-4/5 mx-auto border-t border-border">
       <div className="mb-12">
         <p className="text-xs font-mono tracking-[0.25em] uppercase text-accent mb-4">
-          Technical Arsenal
+          Technical Skills
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-text tracking-tight">
           Tools I reach for every day.

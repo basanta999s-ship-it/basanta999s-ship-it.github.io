@@ -34,8 +34,8 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/cv.pdf"
-            download="Basanta-Shahi-CV.pdf"
+            href="/Basanta-Shahi-Resume.pdf"
+            download="Basanta-Shahi-Resume.pdf"
             className="inline-flex items-center gap-2 border border-borderSoft text-text px-4 py-2 rounded-md text-sm font-semibold hover:border-accent hover:text-accent transition-colors"
           >
             <Download size={16} /> Download CV

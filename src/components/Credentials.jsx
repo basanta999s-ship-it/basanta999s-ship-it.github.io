@@ -2,22 +2,33 @@ import { motion } from 'framer-motion';
 import { Award, GraduationCap } from 'lucide-react';
 
 const certifications = [
-  { name: 'Certified Tester Foundation Level', issuer: 'ASTQB – ISTQB (U.S.)', year: '2026' },
-  { name: 'Web Development', issuer: 'Aptech Computer Education', year: '2017' },
-  { name: 'A+ Certification', issuer: 'Aptech Computer Education', year: '2016' },
+  { name: 'IBM Data Analyst Professional Certificate', issuer: 'IBM · via NPower Canada', year: '2026' },
+  { name: 'Microsoft Azure AI-900 Professional Certificate', issuer: 'Microsoft · via NPower Canada', year: '2026' },
+  {
+    name: 'ISTQB Certified Tester Foundation Level (CTFL)',
+    issuer: 'International Software Quality Institute (iSQI)',
+    year: 'Jun 2026',
+  },
+  { name: 'DevOps: Beginners to Advance with Projects', issuer: 'Udemy', year: 'May 2025' },
 ];
 
 const education = [
   {
+    degree: 'Junior Data Analyst Program',
+    school: 'NPower Canada, Online',
+    year: 'Jun 2026 – Sept 2026',
+    note: 'Expected completion Sept 2026',
+  },
+  {
     degree: 'Post-Graduate Certificate – Full-Stack Software Development',
     school: 'Lambton College, Mississauga, ON',
-    year: '',
+    year: 'Sep 2022 – Apr 2024',
   },
   {
     degree: 'Bachelor of Science in Computer Science & Information Technology',
     school: 'Tribhuvan University, Nepal',
     year: 'Oct 2014 – Dec 2018',
-    note: 'Accredited by WES · Sep 2022 – Apr 2024',
+    note: 'WES Accredited',
   },
 ];
 

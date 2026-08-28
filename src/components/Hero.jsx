@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
 
-const roles = ['ISTQB Certified', 'Software QA Analyst'];
+const roles = ['Data Analyst', 'ISTQB-CTFL Certified'];
 
 const stats = [
   { value: '3+', label: 'Years Experience' },
-  { value: '10+', label: 'Projects Delivered' },
-  { value: '30%', label: 'Manual QA Reduced (Playwright)' },
+  { value: '5+', label: 'Hours Saved Weekly (Automated Reporting)' },
+  { value: '25%', label: 'Policy Violations Reduced' },
 ];
 
 export default function Hero() {
@@ -67,9 +67,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-muted max-w-2xl leading-relaxed mb-10 mx-auto"
         >
-          Building scalable end-to-end and API testing frameworks across 
-          e-commerce, and SaaS — turning manual bottlenecks into fast, trustworthy
-          CI/CD pipelines.
+          Turning messy e-commerce and ERP data into clean, trustworthy datasets
+          and decision-ready dashboards — with SQL, Excel, Power BI, and Python.
         </motion.p>
 
         <motion.div
