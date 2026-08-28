@@ -31,11 +31,10 @@ jobs:
 
       - run: npm run build
 
-      # enablement turns Pages on for the repo on the first run,
-      # so there is no manual step in Settings -> Pages.
+      # No enablement here on purpose: Pages must stay on the "GitHub Actions"
+      # source. Re-enabling it from the workflow can flip the repo back to
+      # branch-based publishing, which serves raw src/ instead of dist/.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
