@@ -18,6 +18,7 @@ const education = [
     school: 'NPower Canada, Online',
     year: 'Jun 2026 – Sept 2026',
     note: 'Expected completion Sept 2026',
+    current: true,
   },
   {
     degree: 'Post-Graduate Certificate – Full-Stack Software Development',
@@ -85,7 +86,18 @@ export default function Credentials() {
           <ul className="space-y-5">
             {education.map((e) => (
               <li key={e.degree} className="border-l-2 border-accent/40 pl-4">
-                <p className="text-text font-medium">{e.degree}</p>
+                <p className="text-text font-medium">
+                  {e.degree}
+                  {e.current && (
+                    <span className="ml-2 align-middle inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider text-accent">
+                      <span className="relative flex h-1.5 w-1.5">
+                        <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+                      </span>
+                      In Progress
+                    </span>
+                  )}
+                </p>
                 <p className="text-sm text-muted mt-1">
                   {e.school}
                   {e.year && (
