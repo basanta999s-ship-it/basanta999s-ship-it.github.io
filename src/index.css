@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Palette as "R G B" channels so Tailwind can apply alpha modifiers.
+   Dark is the default and keeps the original values unchanged. */
+:root {
+  color-scheme: dark;
+
+  --c-bg: 10 15 26;
+  --c-bg-soft: 15 23 42;
+  --c-card: 17 24 39;
+  --c-border: 30 41 59;
+  --c-border-soft: 51 65 85;
+  --c-text: 255 255 255;
+  --c-text-soft: 255 255 255;
+  --c-muted: 255 255 255;
+  --c-accent: 16 185 129;
+  --c-accent-soft: 52 211 153;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --c-bg: 248 250 252;
+  --c-bg-soft: 241 245 249;
+  --c-card: 255 255 255;
+  --c-border: 226 232 240;
+  --c-border-soft: 203 213 225;
+  --c-text: 15 23 42;
+  --c-text-soft: 30 41 59;
+  --c-muted: 71 85 105;
+  /* Darker green so accent text and green buttons stay legible on white. */
+  --c-accent: 4 120 87;
+  --c-accent-soft: 5 150 105;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 18px;
@@ -9,4 +42,15 @@ html {
 
 body {
   @apply bg-bg text-textSoft antialiased selection:bg-accent/30 font-sans;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    transition: none;
+  }
 }

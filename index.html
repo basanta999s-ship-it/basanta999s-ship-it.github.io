@@ -12,6 +12,22 @@
       content="Basanta Shahi — Data Analyst in Mississauga, ON. SQL, Excel, Power BI, and Python for data cleaning, KPI reporting, and dashboards."
     />
     <title>Basanta Shahi | Data Analyst</title>
+    <script>
+      // Applied before first paint so the saved theme does not flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var theme =
+            saved ||
+            (window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
