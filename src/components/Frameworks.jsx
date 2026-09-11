@@ -3,6 +3,12 @@ import { ArrowUpRight, Code, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
+    title: 'Superstore Profitability & Risk Modelling',
+    desc: 'End-to-end pipeline over 51,290 global Superstore orders (2011–2014): cleaned and standardized the raw transactional data, then engineered unit economics, profit margins, and discount tiers. Benchmarked five classifiers on SMOTE-balanced data to flag loss-making orders before they close — XGBoost won at 0.969 ROC-AUC — while a tuned Random Forest regressor predicts profit in dollars at R² 0.715. The headline finding: orders discounted above 30% lose money 92.7% of the time.',
+    tech: ['Python', 'Pandas', 'scikit-learn', 'XGBoost', 'TensorFlow', 'SMOTE'],
+    href: '#',
+  },
+  {
     title: 'Stock Price & Revenue Analysis',
     desc: 'Extracted historical share price data through the yfinance API and scraped quarterly revenue tables from public web sources with BeautifulSoup, then cleaned and reshaped both into Pandas DataFrames. Built comparative time-series dashboards in Plotly plotting revenue against share price — a repeatable extract, transform, and visualize workflow in Jupyter Notebook.',
     tech: ['Python', 'yfinance', 'BeautifulSoup', 'Pandas', 'Plotly'],
