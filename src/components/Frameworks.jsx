@@ -9,6 +9,12 @@ const projects = [
     href: '#',
   },
   {
+    title: 'Clinic Appointments — Data Cleaning & EDA',
+    desc: 'A cleaning pipeline over 1,000 deliberately messy clinic appointment records: gender arriving in eight spellings, follow-up flags in six, billing stored as text across four currency symbols, and dates split between two incompatible formats. Caught a parsing bug that silently dropped half the dates to NaT and recovered all 1,000. Then tested whether age predicts department choice — a chi-square test says no (χ² = 11.28, p = 0.26), so the apparent pattern in the bar chart is noise. Follow-up rates sit in a narrow 44.4%–54.2% band across age groups.',
+    tech: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SciPy'],
+    href: 'https://github.com/basanta999s-ship-it/clinic-appointments-analysis',
+  },
+  {
     title: 'Stock Price & Revenue Analysis',
     desc: 'Extracted historical share price data through the yfinance API and scraped quarterly revenue tables from public web sources with BeautifulSoup, then cleaned and reshaped both into Pandas DataFrames. Built comparative time-series dashboards in Plotly plotting revenue against share price — a repeatable extract, transform, and visualize workflow in Jupyter Notebook.',
     tech: ['Python', 'yfinance', 'BeautifulSoup', 'Pandas', 'Plotly'],
