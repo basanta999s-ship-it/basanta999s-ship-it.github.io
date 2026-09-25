@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const links = [
@@ -40,20 +39,6 @@ export default function Navbar() {
 
           {/* Outside the hidden group so it stays reachable on mobile. */}
           <ThemeToggle />
-
-          <a
-            href="/Basanta-Shahi-Resume.pdf"
-            download="Basanta-Shahi-Resume.pdf"
-            className="hidden md:inline-flex items-center gap-2 border border-borderSoft text-text px-4 py-2 rounded-md text-sm font-semibold hover:border-accent hover:text-accent transition-colors"
-          >
-            <Download size={16} /> Download CV
-          </a>
-          <a
-            href="#contact"
-            className="bg-accent text-bg px-4 py-2 rounded-md text-sm font-semibold hover:bg-accentSoft transition-colors"
-          >
-            Hire Me
-          </a>
         </motion.div>
       </div>
     </nav>
