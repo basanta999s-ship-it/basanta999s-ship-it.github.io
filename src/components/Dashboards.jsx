@@ -32,27 +32,6 @@ const dashboards = [
     href: 'https://github.com/basanta999s-ship-it/superstore-profitability-analysis',
     hrefLabel: 'View on GitHub',
   },
-  {
-    title: 'Car Sales Analysis Dashboard',
-    tool: 'Microsoft Excel',
-    src: '/dashboards/car-sales-dashboard.png',
-    blurb:
-      '155 vehicle models across 30 manufacturers. Slicer-linked PivotCharts surface that the top 3 brands hold 44.5% of unit sales.',
-  },
-  {
-    title: 'Stock Price & Revenue Analysis',
-    tool: 'Python · Plotly',
-    src: '/dashboards/stock-revenue-dashboard.png',
-    blurb:
-      'Comparative time-series of quarterly revenue against share price, built from yfinance API pulls and scraped revenue tables.',
-  },
-  {
-    title: 'Monthly Stakeholder Report',
-    tool: 'Power BI',
-    src: '/dashboards/stakeholder-report.png',
-    blurb:
-      'Automated the monthly aggregation behind KPI reporting at Daraz, replacing 5+ hours of manual spreadsheet work each week.',
-  },
 ];
 
 export default function Dashboards() {

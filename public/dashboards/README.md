@@ -10,9 +10,6 @@ Filenames are declared in the `dashboards` array at the top of
 | `superstore-model-evaluation.png` | Superstore Profitability & Risk Modelling | yes |
 | `superstore-discount-profitability.png` | Superstore Discount Tiers | yes |
 | `clinic-appointments.png` | Clinic Appointments — Cleaning & EDA | no |
-| `car-sales-dashboard.png` | Car Sales Analysis Dashboard | no |
-| `stock-revenue-dashboard.png` | Stock Price & Revenue Analysis | no |
-| `stakeholder-report.png` | Monthly Stakeholder Report | no |
 
 The two Superstore images were pulled from the `images/` folder of
 [superstore-profitability-analysis](https://github.com/basanta999s-ship-it/superstore-profitability-analysis).
