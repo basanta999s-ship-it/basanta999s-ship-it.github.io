@@ -1,17 +1,8 @@
 import { motion } from 'framer-motion';
 
+// Daraz leads deliberately: it is the analytics-relevant role, so it sits
+// above the more recent hospitality job rather than in date order.
 const jobs = [
-  {
-    role: 'Customer Service & Operations Associate',
-    company: "Frank's Hakka",
-    location: 'Mississauga, ON',
-    date: 'May 2024 – May 2026',
-    bullets: [
-      'Manage daily customer orders and POS transactions, support payroll and scheduling, and help keep front-of-house operations running smoothly.',
-      'Known for staying organized under pressure, asking thoughtful questions, and translating complex issues into clear, actionable updates for both technical and non-technical stakeholders.',
-      'Resolve day-to-day operational issues by coordinating order changes, customer concerns, and process gaps, helping maintain service quality during peak business hours.',
-    ],
-  },
   {
     role: 'Quality Assurance & Governance Analyst',
     company: 'Daraz Kyamu Pvt. Ltd.',
@@ -24,6 +15,17 @@ const jobs = [
       'Executed cross-browser, smoke, regression, and UAT cycles across staging and pre-prod environments, collaborating closely with developers to triage and resolve issues quickly.',
       'Streamlined JIRA workflows and bug templates, producing cleaner defect handoffs and improving tracking efficiency by about 25%.',
       'Generated monthly stakeholder reports using Power BI and Excel, automating manual data aggregation and saving the team 5+ hours of manual work per week.',
+    ],
+  },
+  {
+    role: 'Customer Service & Operations Associate',
+    company: "Frank's Hakka",
+    location: 'Mississauga, ON',
+    date: 'May 2024 – May 2026',
+    bullets: [
+      'Manage daily customer orders and POS transactions, support payroll and scheduling, and help keep front-of-house operations running smoothly.',
+      'Known for staying organized under pressure, asking thoughtful questions, and translating complex issues into clear, actionable updates for both technical and non-technical stakeholders.',
+      'Resolve day-to-day operational issues by coordinating order changes, customer concerns, and process gaps, helping maintain service quality during peak business hours.',
     ],
   },
 ];

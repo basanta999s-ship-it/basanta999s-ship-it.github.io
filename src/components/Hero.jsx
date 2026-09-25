@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
 
-const roles = ['Data Analyst', 'ISTQB-CTFL Certified'];
+const roles = ['Data Analyst', 'IBM Certified', 'ISTQB-CTFL Certified'];
 
 const stats = [
   { value: '3+', label: 'Years Experience' },
