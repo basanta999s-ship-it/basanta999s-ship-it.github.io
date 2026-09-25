@@ -1,10 +1,37 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ImageOff, Maximize2, X } from 'lucide-react';
+import { BarChart3, ExternalLink, Maximize2, X } from 'lucide-react';
 
 // Drop screenshots into public/dashboards/ and point `src` at them.
 // See public/dashboards/README.md for sizing notes.
 const dashboards = [
+  {
+    title: 'Superstore Profitability & Risk Modelling',
+    tool: 'Python · XGBoost · scikit-learn',
+    src: '/dashboards/superstore-model-evaluation.png',
+    blurb:
+      '51,290 global orders modelled to flag loss-making sales before they close. XGBoost reached 0.969 ROC-AUC; orders discounted above 30% lose money 92.7% of the time.',
+    href: 'https://github.com/basanta999s-ship-it/superstore-profitability-analysis',
+    hrefLabel: 'View on GitHub',
+  },
+  {
+    title: 'Clinic Appointments — Cleaning & EDA',
+    tool: 'Python · Pandas · SciPy',
+    src: '/dashboards/clinic-appointments.png',
+    blurb:
+      '1,000 messy appointment records standardized — eight spellings of gender, four currency formats, two date schemas. A chi-square test (p = 0.26) showed age does not predict department choice.',
+    href: 'https://github.com/basanta999s-ship-it/clinic-appointments-analysis',
+    hrefLabel: 'View on GitHub',
+  },
+  {
+    title: 'Superstore Discount Tiers',
+    tool: 'Python · Matplotlib',
+    src: '/dashboards/superstore-discount-profitability.png',
+    blurb:
+      'Profitability broken out by discount tier, isolating the threshold where margin turns negative across categories.',
+    href: 'https://github.com/basanta999s-ship-it/superstore-profitability-analysis',
+    hrefLabel: 'View on GitHub',
+  },
   {
     title: 'Car Sales Analysis Dashboard',
     tool: 'Microsoft Excel',
@@ -75,6 +102,17 @@ export default function Dashboards() {
               </p>
               <h3 className="text-lg font-semibold text-text mb-2">{d.title}</h3>
               <p className="text-sm text-muted leading-relaxed">{d.blurb}</p>
+              {d.href && (
+                <a
+                  href={d.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accentSoft transition-colors"
+                >
+                  {d.hrefLabel || 'View project'}
+                  <ExternalLink size={14} />
+                </a>
+              )}
             </figcaption>
           </motion.figure>
         ))}
@@ -111,16 +149,15 @@ export default function Dashboards() {
 function Thumb({ dashboard, onOpen }) {
   const [failed, setFailed] = useState(false);
 
-  // Until a screenshot is dropped in, show a labelled placeholder rather
-  // than a broken-image icon.
+  // Missing screenshots fall back to a neutral tile — this is public-facing,
+  // so it shows the tool rather than instructions to add a file.
   if (failed) {
     return (
-      <div className="aspect-[16/10] bg-bgSoft border-b border-border flex flex-col items-center justify-center gap-2 text-center px-4">
-        <ImageOff size={22} className="text-muted opacity-50" />
-        <p className="text-xs text-muted opacity-70 font-mono">
-          Add {dashboard.src.replace('/dashboards/', '')}
+      <div className="aspect-[16/10] bg-bgSoft border-b border-border flex flex-col items-center justify-center gap-3 text-center px-4">
+        <BarChart3 size={26} className="text-accent opacity-40" />
+        <p className="text-xs font-mono uppercase tracking-wider text-muted opacity-60">
+          {dashboard.tool}
         </p>
-        <p className="text-[10px] text-muted opacity-50">to public/dashboards/</p>
       </div>
     );
   }

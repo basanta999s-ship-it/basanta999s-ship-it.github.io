@@ -78,7 +78,7 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-4 mb-16"
         >
           <a
-            href="#projects"
+            href="#dashboards"
             className="inline-flex items-center gap-2 bg-accent text-bg px-6 py-3 rounded-md font-semibold hover:bg-accentSoft transition-colors"
           >
             View Work <ArrowRight size={18} />

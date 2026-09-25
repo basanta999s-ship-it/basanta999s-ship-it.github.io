@@ -2,15 +2,22 @@
 
 Drop screenshots here and they appear in the **Dashboards** section of the site.
 
-Expected filenames (these are what `src/components/Dashboards.jsx` looks for):
+Filenames are declared in the `dashboards` array at the top of
+`src/components/Dashboards.jsx`. Current state:
 
-| File | Shown as |
-| --- | --- |
-| `car-sales-dashboard.png` | Car Sales Analysis Dashboard |
-| `stock-revenue-dashboard.png` | Stock Price & Revenue Analysis |
-| `stakeholder-report.png` | Monthly Stakeholder Report |
+| File | Card | Present? |
+| --- | --- | --- |
+| `superstore-model-evaluation.png` | Superstore Profitability & Risk Modelling | yes |
+| `superstore-discount-profitability.png` | Superstore Discount Tiers | yes |
+| `clinic-appointments.png` | Clinic Appointments — Cleaning & EDA | no |
+| `car-sales-dashboard.png` | Car Sales Analysis Dashboard | no |
+| `stock-revenue-dashboard.png` | Stock Price & Revenue Analysis | no |
+| `stakeholder-report.png` | Monthly Stakeholder Report | no |
 
-Any card whose file is missing shows a labelled placeholder instead of a broken
+The two Superstore images were pulled from the `images/` folder of
+[superstore-profitability-analysis](https://github.com/basanta999s-ship-it/superstore-profitability-analysis).
+
+A card with no image shows a neutral tile with its tool name instead of a broken
 image, so the section stays presentable until every screenshot is in place.
 
 ## Tips
@@ -24,5 +31,6 @@ image, so the section stays presentable until every screenshot is in place.
 
 ## Adding or renaming a card
 
-Edit the `dashboards` array at the top of `src/components/Dashboards.jsx`. Each
-entry takes `title`, `tool`, `src`, and `blurb`.
+Edit the `dashboards` array in `src/components/Dashboards.jsx`. Each entry takes
+`title`, `tool`, `src`, `blurb`, and optionally `href` / `hrefLabel` for the link
+shown under the description.

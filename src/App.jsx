@@ -4,7 +4,6 @@ import About from './components/About';
 import Expertise from './components/Expertise';
 import Experience from './components/Experience';
 import Dashboards from './components/Dashboards';
-import Frameworks from './components/Frameworks';
 import Credentials from './components/Credentials';
 import { Mail, MapPin } from 'lucide-react';
 
@@ -34,7 +33,6 @@ export default function App() {
         <Expertise />
         <Experience />
         <Dashboards />
-        <Frameworks />
       </main>
 
       <footer id="contact" className="py-28 px-6 w-4/5 mx-auto text-center border-t border-border">
